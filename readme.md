@@ -30,7 +30,9 @@ change data folder in `configs/preprocess_final.yaml` ( `input_data.root_data_fo
     # U r amazing
 ```
 
-for inference only place ckpts to `work_dirs/yaw_final/checkpoints` and `work_dirs/speed_final/checkpoints` accordingly 
+**Inference:**
+
+for inference only place ckpts to `work_dirs/yaw_final/checkpoints` and `work_dirs/speed_final/checkpoints` accordingly [Ckpts weights - git release](https://github.com/ktverdov/yacup-24-selfdriving/releases/tag/submission)
 
 ```
     sh prepare_data.sh only_test
