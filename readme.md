@@ -38,3 +38,13 @@ for inference only place ckpts to `work_dirs/yaw_final/checkpoints` and `work_di
     sh prepare_data.sh only_test
     sh predict.sh
 ```
+
+```
+wget https://github.com/ktverdov/yacup-24-selfdriving/releases/download/submission/speed_final.zip
+mkdir -p ./work_dirs/speed_final/checkpoints/
+unzip speed_final.zip -d ./work_dirs/speed_final/checkpoints/
+
+wget https://github.com/ktverdov/yacup-24-selfdriving/releases/download/submission/yaw_final.zip
+mkdir -p ./work_dirs/yaw_final/checkpoints/
+unzip yaw_final.zip -d ./work_dirs/yaw_final/checkpoints/
+```
