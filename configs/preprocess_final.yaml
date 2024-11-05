@@ -1,0 +1,10 @@
+input_data:
+  root_data_folder: "/data/ya_cup_24_self_driving/YandexCup2024v2/"
+  train_dataset_folder: "YaCupTrain"
+  test_dataset_folder: "YaCupTest"
+
+preprocess_params:
+  grid_size: 40000000
+  val_split_filename: "val_split_01.dump"
+  val_size: 0.1
+  exp_data_folder: "preprocessed_final"

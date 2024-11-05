@@ -1,0 +1,37 @@
+output_dir: work_dirs
+exp_name: yaw_final
+
+dataset:
+  type: TrajectoryDatasetFullDataV0
+  target_columns:
+    - yaw_sin
+    - yaw_cos
+  train_bs: 256
+  val_bs: 256
+  val_metric: yaw_mse
+
+optimizer:
+  type: Adam
+  parameters:
+    lr: 0.001
+
+model:
+  type: tsmixer_ext
+  parameters:
+    sequence_length: 125
+    prediction_length: 375
+    input_channels: 12
+    extra_channels: 2
+    hidden_channels: 16
+    static_channels: 6
+    output_channels: 2
+
+pl_model:
+  TrajectoryPredictorYaw
+
+loss:
+  type: CosMseLoss
+
+train_params:
+  n_epochs: 100
+  device: gpu
