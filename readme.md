@@ -3,13 +3,9 @@ Solution for Yandex Cup 24 Self-Driving Cars.
 **Hardware**:
 
 - Python 3.10.12 [GCC 11.4.0] on linux
-
 - RAM: 32GB
-
 - GPU: 2080ti
-
 - nvidia-driver: 535.161.07
-
 - CUDA: 12.2
 
 time for train ~4 hours
